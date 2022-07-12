@@ -1,0 +1,46 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="DuplicatedCode" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <Languages>
+        <language minSize="98" name="Python" />
+      </Languages>
+    </inspection_tool>
+    <inspection_tool class="PyPep8Inspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="E127" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N803" />
+          <option value="N806" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="merchant.serializers.TransactionStatusSerializer._declared_fields" />
+          <option value="merchant.lib.mixin_utils.PreProcessorMixin.get_serializer" />
+          <option value="merchant.lib.mixin_utils.PreProcessorMixin.preprocessor_class" />
+          <option value="merchant.lib.views_utils.ModifiedGenericViewSet.serializer_classes" />
+          <option value="merchant.lib.transaction_logger.GenericTransactionLogger.*" />
+          <option value="merchant.lib.mixin_utils.PreProcessorMixin.*" />
+          <option value="object.initial" />
+          <option value="merchant.services.psps.base.GenericPSPTransactionLogger.STARTED_STAGE_RESULT" />
+          <option value="merchant.services.psps.base.GenericPSPTransactionLogger.TRANSACTION_STAGES" />
+          <option value="object.is_valid" />
+          <option value="merchant.services.psps.base.GenericPSPTransactionLogger.SUCCESS_STAGE_RESULT" />
+          <option value="merchant.services.psps.base.GenericPSPTransactionLogger.PRE_PROC_STAGE" />
+          <option value="Exception.detail" />
+          <option value="DjangoBoilerPlateProject.djangoapp.models.Student.objects" />
+          <option value="types.ModuleType.SessionStore" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
