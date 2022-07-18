@@ -98,16 +98,16 @@ def post_delete(request, pk):
 	return redirect('home')
 
 
-@login_required
-def search_posts(request):
-	query = request.GET.get('p')
-	object_list = Post.objects.filter(tags__icontains=query)
-	liked = [i for i in object_list if Like.objects.filter(user = request.user, post=i)]
-	context ={
-		'posts': object_list,
-		'liked_post': liked
-	}
-	return render(request, "feed/search_posts.html", context)
+# @login_required
+# def search_posts(request):
+# 	query = request.GET.get('p')
+# 	object_list = Post.objects.filter(tags__icontains=query)
+# 	liked = [i for i in object_list if Like.objects.filter(user = request.user, post=i)]
+# 	context ={
+# 		'posts': object_list,
+# 		'liked_post': liked
+# 	}
+# 	return render(request, "feed/search_posts.html", context)
 
 @login_required
 def like(request):

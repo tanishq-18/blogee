@@ -10,7 +10,7 @@
     />
     <link
       rel="icon"
-      type="image/svg"
+      type="image/svg "
       href="https://www.spritle.com/images/logo.svg"
     />
     <!-- Bootstrap CSS -->
@@ -47,25 +47,25 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-            <a class="nav-item nav-link" href="{% url 'home' %}">Home</a>
+            <a class="nav-item nav-link mt-2" href="{% url 'home' %}">Home</a>
           {% if user.is_authenticated %}
-          <a class="nav-item nav-link" href="{% url 'my_profile' %}">Profile</a>
-          <a class="nav-item nav-link btn btn-info ml-3 text-light" href="{% url 'post-create' %}"
+          <a class="nav-item nav-link mt-2" href="{% url 'my_profile' %}">Profile</a>
+          <a class="nav-item nav-link btn btn-info ml-4 text-light mt-2" href="{% url 'post-create' %}"
             >Create Post</a
           >
           <a
-            class="nav-item nav-link btn btn-info ml-3 text-light"
+            class="nav-item nav-link btn btn-info ml-4 mt-2 text-light"
             href="{% url 'logout' %}"
             >Logout</a
           >
           {% else %}
           <a
-            class="nav-item nav-link btn btn-info ml-4 text-light"
+            class="nav-item nav-link btn btn-info ml-4 mt-2 text-light"
             href="{% url 'login' %}"
             >LogIn</a
           >
           <a
-            class="nav-item nav-link btn btn-warning ml-3 text-light"
+            class="nav-item nav-link btn btn-warning ml-4 mt-2 text-light"
             href="{% url 'register' %} "
             >Register</a
           >
